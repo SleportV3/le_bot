@@ -60,6 +60,10 @@ list = [
         'value': 'Bonsoir ! Je suis vraiment le pire bot... Désolé...'
     },
     {
+        'name': 'salut',
+        'value': 'Yo ! Comment tu vas ?'
+    },
+    {
         'name': 'aide moi',
         'value': 'Je suis pas dispo mdr',
     },
