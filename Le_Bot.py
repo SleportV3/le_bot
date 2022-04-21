@@ -1,10 +1,13 @@
 import discord
+import json
 from discord import Embed
 from discord.ext import commands
 import colorama
 import json
 from colorama import Fore, Back, Style
 import sys, time
+with open('./config.json', 'r') as cjson:
+    config = json.load(cjson)
 colorama.init()
 bot = commands.Bot(command_prefix = "!", description = "Bot de Nathoune")
 
@@ -277,4 +280,4 @@ async def on_message(message):
         await message.channel.send(embed=embed1)
 
     
-bot.run("token")
+bot.run(config["token"])
