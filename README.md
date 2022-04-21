@@ -32,7 +32,8 @@ Le_Bot est un bot interactif qui réagit à certains mots et dynamise votre serv
 
 Il vous suffit de télécharger le package. Ensuite installer Python en cochant la case **ADD Python {version} TO PATH**.
 Ouvrez un CMD à l'emplcament de vos fichiers. Éxecutez cette commande `pip install -r requirements.txt`.
-Mentionnez le token de votre bot dans le fichier `config.json`.
+Mentionnez le token de votre bot dans le fichier `config.json`. 
+** **
 Mentionnez le prefix de votre bot dans le fichier `config.json`.
 Lancer `Le_Bot.py` et votre bot sera en ligne !
 Amusez-vous bien !
