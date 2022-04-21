@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="#présentation">Général</a>
+  <a href="#présentation">Présentation</a>
   •
   <a href="#installation">Installation</a>
   •
