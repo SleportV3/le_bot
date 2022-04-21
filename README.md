@@ -1,7 +1,4 @@
 <h1 align="center">
-  <br>
-  Le_Bot
-  <br>
   <a href="https://github.com/Nathoune-YT/le_bot"><img src="https://i.imgur.com/qj7s2CG.jpeg"></a>
 </h1>
 
