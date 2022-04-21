@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href=https://discord.gg/b6jjy5yKXV>
-    <img src="https://i.imgur.com/Iifi5e1.png" alt="Serveur Discord">
+    <img src="https://i.imgur.com/Iifi5e1.png = 250x250" alt="Serveur Discord">
   </a>
 </p>
 
