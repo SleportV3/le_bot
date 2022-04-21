@@ -2,6 +2,7 @@
   <br>
   Le_Bot
   <br>
+  <a href="https://github.com/Nathoune-YT/le_bot"><img src="https://cdn-0.emojis.wiki/emoji-pics/facebook/ok-hand-facebook.png" alt="Le_Bot"></a>
 </h1>
 
 <h4 align="center">Le_Bot, votre bot interactif !</h4>
