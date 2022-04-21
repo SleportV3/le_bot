@@ -2,7 +2,7 @@
   <br>
   Le_Bot
   <br>
-  <a href="https://github.com/Nathoune-YT/le_bot"><img src="https://imgur.com/a/GjLU1k0"></a>
+  <a href="https://github.com/Nathoune-YT/le_bot"><img src="https://i.imgur.com/qj7s2CG.jpeg"></a>
 </h1>
 
 <h4 align="center">Le_Bot, votre bot interactif !</h4>
