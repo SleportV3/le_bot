@@ -3,12 +3,6 @@
 </h1>
 
 <p align="center">
-  <a href=https://discord.gg/b6jjy5yKXV>
-    <img width="400" src="https://i.imgur.com/Iifi5e1.png" alt="Serveur Discord">
-  </a>
-</p>
-
-<p align="center">
   <a href="#présentation">Présentation</a>
   •
   <a href="#installation">Installation</a>
@@ -18,7 +12,7 @@
 
 # Présentation
 
-Le_Bot est un bot interactif qui réagit à certains mots et dynamise votre serveur Discord ! Il peut se rendre très sympatique ou diabolique (je comprends qu'il vous énerve lol)
+Le_Bot est un bot interactif qui réagit à certains mots et dynamise votre serveur Discord ! Il peut se rendre très sympatique ou diabolique (je comprends qu'il vous énerve lol). Vous pouvez directement [ajouter Le_Bot](https://discord.com/oauth2/authorize?client_id=881098458482753586&permissions=2048&scope=bot) à votre serveur, il possedera les réponses aux mots présentes dans le `liste.json`.  
 
 [L'installation](#installation) est simple et rapide.
 
@@ -39,3 +33,11 @@ Amusez-vous bien !
 Le_Bot est sous licence [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html).  
 
 Si vous désirez vous baser du code de Le_Bot pour créer votre propre bot Discord, veuillez uploader votre nouveau script python sur GitHub avec la même [**licence**](https://raw.githubusercontent.com/Nathoune-YT/le_bot/main/LICENSE) et mentionnez l'auteur `Nathoune`.
+
+<table align="center">
+  <tr>
+    <a href="https://discord.gg/b6jjy5yKXV"><img src="https://i.imgur.com/Iifi5e1.png" width="337"></a>
+    <a href="https://www.youtube.com/c/Nathoune"><img src="https://i.imgur.com/8ouURXj.png" width="337"></a>
+    <a href="https://discord.com/oauth2/authorize?client_id=881098458482753586&permissions=2048&scope=bot"><img src="https://i.imgur.com/eixR2E8.png" width="337"></a>
+  </tr>
+</table>
