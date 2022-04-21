@@ -32,6 +32,7 @@ Il vous suffit de télécharger le package. Ensuite installer Python en cochant 
 Ouvrez un CMD à l'emplcament de vos fichiers. Éxecutez cette commande `pip install -r requirements.txt`.  
 Mentionnez le token de votre bot dans le fichier `config.json`.  
 Mentionnez le prefix de votre bot dans le fichier `config.json`.  
+Vous pouvez ajouter ou supprimer les mots auxquels Le_Bot réagit dans le fichier `liste.json`. `name` correspond aux mots auxquels Le_Bot réagit, vous n'avez pas besoin de mettre toutes les déclinaisons du mot (exemple : Salut ; sAlut ; saLut...), le script prend en compte ce paramètre. `value` correpond à la réponse de Le_Bot.  
 Lancer `Le_Bot.py` et votre bot sera en ligne !  
 Amusez-vous bien !
 
