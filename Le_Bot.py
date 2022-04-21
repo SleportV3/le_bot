@@ -45,183 +45,188 @@ async def on_ready():
     await bot.change_presence(status=discord.Status.online, activity=activity)
     print('\033[32m' + '\n\n                >En ligne< \n\n' + '\033' + '\n\n>>> NE SURTOUT PAS FERMER CETTE FENÊTRE ! LE BOT EST EN LIGNE UNIQUEMENT QUAND CETTE DERNIÈRE EST OUVERTE ! <<<' + '\033[39m' + '\n\n\n®Nathoune 2021')
 
+
+list = [
+    {
+        'name': 'yo',
+        'value': 'Salut !'
+    },
+    {
+        'name': 'comment tu vas ?',
+        'value': 'Moi très bien ! Après les autres je sais pas...'
+    },
+    {
+        'name': 'bonjour',
+        'value': 'Bonsoir ! Je suis vraiment le pire bot... Désolé...'
+    },
+    {
+        'name': 'aide moi',
+        'value': 'Je suis pas dispo mdr',
+    },
+    {
+        'name': 'aide-moi',
+        'value': 'Je suis pas dispo mdr',
+    },
+    {
+        'name': 'bravo',
+        'value': 'Bravoooooooo ! Tu es trop fort ! (je sais pas ce que tu as fait mais bravo)'
+    },
+    {
+        'name': 'pourquoi',
+        'value': 'Je sais pas demande lui...',
+    },
+    {
+        'name': 'pourquoi ?',
+        'value': 'Je sais pas demande lui...',
+    },
+    {
+        'name': 'pk',
+        'value': 'Je sais pas demande lui...',
+    },
+    {
+        'name': 'pk ?',
+        'value': 'Je sais pas demande lui...',
+    },
+    {
+        'name': 'mdr',
+        'value': 'Trop drôle mdrrr'
+    },
+    {
+        'name': 'ptdr',
+        'value': 'Jsuis plié de rire mdr'
+    },
+    {
+        'name': 'le bot',
+        'value': 'Qui ? Moi ? Je suis mieux que vos bots anti raids... Moi je créer des raids mdr (c faux je suis éclaté)'
+    },
+    {
+        'name': 'bot',
+        'value': 'Qui ? Moi ? Je suis mieux que vos bots anti raids... Moi je créer des raids mdr (c faux je suis éclaté)'
+    },
+    {
+        'name': 'le bot est éclaté',
+        'value': 'Oui'
+    },
+    {
+        'name': 'il est éclaté',
+        'value': 'Oui, totalement'
+    },
+    {
+        'name': 'le bot est nul',
+        'value': 'Oui je sers à rien'
+    },
+    {
+        'name': 'tu sers à rien',
+        'value': 'Oui'
+    },
+    {
+        'name': 're',
+        'value': 'Re.. ça va depuis ?'
+    },
+    {
+        'name': 'nathoune',
+        'value': 'Mon créateur mdr'
+    },
+    {
+        'name': 'bien et toi ?',
+        'value': 'Perso ça va bien merci'
+    },
+    {
+        'name': 'raid',
+        'value': 'Qui veut raid ici je vais le démarer'
+    },
+    {
+        'name': 'tg le bot',
+        'value': 'Depuis quand je me prends des tg comme ça moi'
+    },
+    {
+        'name': 'tg',
+        'value': 'Ouais tg (sauf si on parle à moi mdrr)'
+    },
+    {
+        'name': 'ta gueule',
+        'value': 'Ouais tg (sauf si on parle à moi mdrr)'
+    },
+    {
+        'name': 'ta gueule le bot',
+        'value': 'Depuis quand je me prends des ta gueule comme ça moi'
+    },
+    {
+        'name': 'putain',
+        'value': '__**PARDON ? QU ENTENGE ? UNE INJURE ? JE VAIS TE KICK DU SERV MOI !**__ mdr tkt je suis un peu inutile sur ce serv'
+    },
+    {
+        'name': 'merde',
+        'value': '__**PARDON ? QU ENTENGE ? UNE INJURE ? JE VAIS TE KICK DU SERV MOI !**__ mdr tkt je suis un peu inutile sur ce serv'
+    },
+    {
+        'name': 'jsp',
+        'value': 'Moi non plus lol'
+    },
+    {
+        'name': 'je sais pas',
+        'value': 'Moi non plus lol'
+    },
+    {
+        'name': 'lol',
+        'value': 'lLlooOooOoOOlLll :joy::joy::joy:'
+    },
+    {
+        'name': 'discord',
+        'value': 'Nous sommes sur cette application ! (truc de ouf comment j`informe les gens, dingue)',
+    },
+    {
+        'name': 'ban',
+        'value': 'Qui va ban qui ? Je suis le maître des lieux (faux je sers à rien)'
+    },
+    {
+        'name': 'bannir',
+        'value': 'Qui va ban qui ? Je suis le maître des lieux (faux je sers à rien)'
+    },
+    {
+        'name': 'python',
+        'value': 'Mon language de programmation !',
+    },
+    {
+        'name': 'java',
+        'value': 'Mouais :yawning_face:'
+    },
+    {
+        'name': 'abonnement',
+        'value': 'Go > https://www.youtube.com/Nathoune/c/?sub_confirmation=1'
+    },
+    {
+        'name': 'hello',
+        'value': 'Hello everyone, welcome to a brand new tutorial, today we create a script with python (prends l`accent indien)'
+    },
+    {
+        'name': 'vfx',
+        'value': 'Que ce monde est passionnant !'
+    },
+    {
+        'name': '3d',
+        'value': 'Que ce monde est passionnant !'
+    },
+    {
+        'name': 'youtube',
+        'value': 'YouTube est un site web d’hébergement de vidéos et un média social sur lequel les utilisateurs peuvent envoyer, regarder, commenter, évaluer et partager des vidéos en streaming. Wikip.. non moi même mdr (crois moi stp)'
+    }
+
+
+]
+
+
 @bot.event
 async def on_message(message):
-    if message.content.lower() == ('salut'):
-        channel = message.channel
-        await channel.send('Yo ! Comment tu vas ?')
 
-    if message.content.lower() == ('yo'):
-        channel = message.channel
-        await channel.send('Salut !')
-
-    if message.content.lower() == ('comment tu vas ?'):
-        channel = message.channel
-        await channel.send('Moi très bien ! Après les autres je sais pas...')
-
-    if message.content.lower() == ('bonjour'):
-        channel = message.channel
-        await channel.send('Bonsoir ! Je suis vraiment le pire bot... Désolé...')
-
-    if message.content.lower() == ('aide moi'):
-        channel = message.channel
-        await channel.send('Je suis pas dispo mdr')
-
-    if message.content.lower() == ('aide-moi'):
-        channel = message.channel
-        await channel.send('Je suis pas dispo mdr')
-
-    if message.content.lower() == ('bravo'):
-        channel = message.channel
-        await channel.send('Bravoooooooo ! Tu es trop fort ! (je sais pas ce que tu as fait mais bravo)')
-
-    if message.content.lower() == ('pourquoi'):
-        channel = message.channel
-        await channel.send('Je sais pas demande lui...')
-
-    if message.content.lower() == ('pourquoi ?'):
-        channel = message.channel
-        await channel.send('Je sais pas demande lui...')
-
-    if message.content.lower() == ('pk'):
-        channel = message.channel
-        await channel.send('Je sais pas demande lui...')
-
-    if message.content.lower() == ('pk ?'):
-        channel = message.channel
-        await channel.send('Je sais pas demande lui...')
-
-    if message.content.lower() == ('mdr'):
-        channel = message.channel
-        await channel.send('Trop drôle mdrrr')
-
-    if message.content.lower() == ('ptdr'):
-        channel = message.channel
-        await channel.send('Jsuis plié de rire mdr')
-
-    if message.content.lower() == ('le bot'):
-        channel = message.channel
-        await channel.send('Qui ? Moi ? Je suis mieux que vos bots anti raids... Moi je créer des raids mdr (c faux je suis éclaté)')
-
-    if message.content.lower() == ('bot'):
-        channel = message.channel
-        await channel.send('Qui ? Moi ? Je suis mieux que vos bots anti raids... Moi je créer des raids mdr (c faux je suis éclaté)')
-
-    if message.content.lower() == ('le bot est éclaté'):
-        channel = message.channel
-        await channel.send('Oui')
-
-    if message.content.lower() == ('il est éclaté'):
-        channel = message.channel
-        await channel.send('Oui, totalement')
-
-    if message.content.lower() == ('le bot est nul'):
-        channel = message.channel
-        await channel.send('Oui je sers à rien')
-
-    if message.content.lower() == ('tu sers à rien'):
-        channel = message.channel
-        await channel.send('Oui')
-
-    if message.content.lower() == ('tu sers à rien @Le Bot'):
-        channel = message.channel
-        await channel.send('Oui')
-
-    if message.content.lower() == ('re'):
-        channel = message.channel
-        await channel.send('Re.. ça va depuis ?')
-
-    if message.content.lower() == ('nathoune'):
-        channel = message.channel
-        await channel.send('Mon créateur mdr')
-
-    if message.content.lower() == ('bien et toi ?'):
-        channel = message.channel
-        await channel.send('Perso ça va bien merci')
-
-    if message.content.lower() == ('bien et toi'):
-        channel = message.channel
-        await channel.send('Perso ça va bien merci')
-
-    if message.content.lower() == ('raid'):
-        channel = message.channel
-        await channel.send('Qui veut raid ici je vais le démarer')
-        
-    if message.content.lower() == ('tg le bot'):
-        channel = message.channel
-        await channel.send('Depuis quand je me prends des tg comme ça moi')
-        
-    if message.content.lower() == ('tg'):
-        channel = message.channel
-        await channel.send('Ouais tg (sauf si on parle à moi mdrr)')
-        
-    if message.content.lower() == ('ta gueule'):
-        channel = message.channel
-        await channel.send('Ouais tg (sauf si on parle à moi mdrr)')
-        
-    if message.content.lower() == ('ta gueule le bot'):
-        channel = message.channel
-        await channel.send('Depuis quand je me prends des ta gueule comme ça moi')
     
-    if message.content.lower() == ('putain'):
-        channel = message.channel
-        await channel.send('__**PARDON ? QU ENTENGE ? UNE INJURE ? JE VAIS TE KICK DU SERV MOI !**__ mdr tkt je suis un peu inutile sur ce serv')
-    
-    if message.content.lower() == ('merde'):
-        channel = message.channel
-        await channel.send('__**PARDON ? QU ENTENGE ? UNE INJURE ? JE VAIS TE KICK DU SERV MOI !**__ mdr tkt je suis un peu inutile sur ce serv')
 
-    if message.content.lower() == ('jsp'):
-        channel = message.channel
-        await channel.send('Moi non plus lol')
+    for obj in list:
+        if message.content.lower() == obj['name']:
+            channel = message.channel
+            await channel.send(obj['value'])
 
-    if message.content.lower() == ('je sais pas'):
-        channel = message.channel
-        await channel.send('Moi non plus lol')
-        
-    if message.content.lower() == ('lol'):
-        channel = message.channel
-        await channel.send('lLlooOooOoOOlLll :joy::joy::joy:')
 
-    if message.content.lower() == ('discord'):
-        channel = message.channel
-        await channel.send('Nous sommes sur cette application ! (truc de ouf comment j`informe les gens, dingue)')
-
-    if message.content.lower() == ('ban'):
-        channel = message.channel
-        await channel.send('Qui va ban qui ? Je suis le maître des lieux (faux je sers à rien)')
-
-    if message.content.lower() == ('bannir'):
-        channel = message.channel
-        await channel.send('Qui va ban qui ? Je suis le maître des lieux (faux je sers à rien)')
-
-    if message.content.lower() == ('python'):
-        channel = message.channel
-        await channel.send('Mon language de programmation !')
-
-    if message.content.lower() == ('java'):
-        channel = message.channel
-        await channel.send('Mouais :yawning_face:')
-
-    if message.content.lower() == ('abonnement'):
-        channel = message.channel
-        await channel.send('Go > https://www.youtube.com/Nathoune/c/?sub_confirmation=1')
-
-    if message.content.lower() == ('hello'):
-        channel = message.channel
-        await channel.send('Hello everyone, welcome to a brand new tutorial, today we create a script with python (prends l`accent indien)')
-
-    if message.content.lower() == ('vfx'):
-        channel = message.channel
-        await channel.send('Que ce monde est passionnant !')
-
-    if message.content.lower() == ('3d'):
-        channel = message.channel
-        await channel.send('Que ce monde est passionnant !')
-
-    if message.content.lower() == ('youtube'):
-        channel = message.channel
-        await channel.send('YouTube est un site web d’hébergement de vidéos et un média social sur lequel les utilisateurs peuvent envoyer, regarder, commenter, évaluer et partager des vidéos en streaming. Wikip.. non moi même mdr (crois moi stp)')
         
     if message.content.lower() == ("{}h".format(config["prefix"])):
         channel = message.channel
