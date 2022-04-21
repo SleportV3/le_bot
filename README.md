@@ -1,6 +1,7 @@
 <h1 align="center">
   <br>
   Le_Bot
+  ![image](https://cdn-0.emojis.wiki/emoji-pics/facebook/ok-hand-facebook.png)
   <br>
 </h1>
 
