@@ -9,7 +9,7 @@ import sys, time
 with open('./config.json', 'r') as cjson:
     config = json.load(cjson)
 colorama.init()
-bot = commands.Bot(command_prefix = "!", description = "Bot de Nathoune")
+bot = commands.Bot(command_prefix = config["prefix"], description = "Bot de Nathoune")
 
 print('\033[36m' + '                     ██▓    ▓█████      ▄▄▄▄    ▒█████  ▄▄▄█████▓\n                    ▓██▒    ▓█   ▀     ▓█████▄ ▒██▒  ██▒▓  ██▒ ▓▒\n                    ▒██░    ▒███       ▒██▒ ▄██▒██░  ██▒▒ ▓██░ ▒░\n                    ▒██░    ▒▓█  ▄     ▒██░█▀  ▒██   ██░░ ▓██▓ ░ \n                    ░██████▒░▒████    ▒░▓█  ▀█▓░ ████▓▒░  ▒██▒ ░ \n                    ░ ▒░▓  ░░░ ▒░     ░░▒▓███▀▒░ ▒░▒░▒░    ▒ ░░   \n                    ░ ░ ▒  ░ ░ ░      ░▒░▒   ░   ░ ▒ ▒░     ░    \n                      ░ ░      ░        ░    ░ ░ ░ ░ ▒    ░      \n                        ░  ░   ░      ░ ░          ░ ░          ')
 print('\033[39m')
@@ -223,11 +223,11 @@ async def on_message(message):
         channel = message.channel
         await channel.send('YouTube est un site web d’hébergement de vidéos et un média social sur lequel les utilisateurs peuvent envoyer, regarder, commenter, évaluer et partager des vidéos en streaming. Wikip.. non moi même mdr (crois moi stp)')
         
-    if message.content.lower() == ('!h'):
+    if message.content.lower() == ("{}h".format(config["prefix"])):
         channel = message.channel
         embed1 = Embed(title="Commandes et mots :", color=0xffab33)
-        embed1.add_field(name="!h ", value="Envoyer ce message", inline=False)
-        embed1.add_field(name="!news", value="Afficher les nouveautés !", inline=True)
+        embed1.add_field(name="{}h".format(config["prefix"]), value="Envoyer ce message", inline=False)
+        embed1.add_field(name="{}news".format(config["prefix"]), value="Afficher les nouveautés !", inline=True)
         embed1.add_field(name="Salut", value="Réponse de Le_Bot", inline=False)
         embed1.add_field(name="Yo", value="Réponse de Le_Bot", inline=False)
         embed1.add_field(name="Comment tu vas ?", value="Réponse de Le_Bot", inline=False)
@@ -263,7 +263,7 @@ async def on_message(message):
         embed1.set_image(url="https://cdn-0.emojis.wiki/emoji-pics/facebook/ok-hand-facebook.png")     
         await message.channel.send(embed=embed1)
         
-    if message.content.lower() == ('!news'):
+    if message.content.lower() == ("{}news".format(config["prefix"])):
         channel = message.channel
         embed1 = Embed(title="Voici le nouveautés !", color=0xffab33)
         embed1.add_field(name="Discord", value="Réponse de Le_Bot", inline=False)
