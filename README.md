@@ -2,8 +2,6 @@
   <a href="https://github.com/Nathoune-YT/le_bot"><img src="https://i.imgur.com/qj7s2CG.jpeg"></a>
 </h1>
 
-<h4 align="center">Le_Bot, votre bot interactif !</h4>
-
 <p align="center">
   <a href=https://discord.gg/b6jjy5yKXV>
     <img src="https://discordapp.com/api/guilds/133049272517001216/widget.png?style=shield" alt="Discord Server">
