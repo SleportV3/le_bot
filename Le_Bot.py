@@ -37,7 +37,6 @@ async def on_message(message):
     
     
     if message.content.lower() == ("{}h".format(config["prefix"])):
-        channel = message.channel
         embed1 = Embed(title="Commandes et mots :", color=0xffab33)
         embed1.add_field(name="{}h".format(config["prefix"]), value="Envoyer ce message", inline=False)
         embed1.add_field(name="{}news".format(config["prefix"]), value="Afficher les nouveautés !", inline=True)
@@ -77,7 +76,6 @@ async def on_message(message):
         await message.channel.send(embed=embed1)
         
     if message.content.lower() == ("{}news".format(config["prefix"])):
-        channel = message.channel
         embed1 = Embed(title="Voici le nouveautés !", color=0xffab33)
         embed1.add_field(name="Discord", value="Réponse de Le_Bot", inline=False)
         embed1.add_field(name="Ban", value="Réponse de Le_Bot", inline=False)
